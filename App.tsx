@@ -61,7 +61,6 @@ export default function App() {
             q: value,
           },
         })
-        console.log("result", data)
         setIsDay(data.current.is_day)
         setLocation({
           city: data?.location?.name,

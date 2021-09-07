@@ -1,6 +1,4 @@
-import { AntDesign, Feather } from "@expo/vector-icons"
-import { Icon } from "@expo/vector-icons/build/createIconSet"
-import React, { FC, useEffect, useState } from "react"
+import React, { FC } from "react"
 import { Image, StyleSheet, Text, View } from "react-native"
 
 const Info: FC<{ celcies: string; text: string; uri: string }> = ({
@@ -10,7 +8,6 @@ const Info: FC<{ celcies: string; text: string; uri: string }> = ({
 }) => {
   return text ? (
     <View style={styles.container}>
-      {/* <Feather style={styles.image} name={name} color="yellow" size={100} /> */}
       <Image
         source={{
           uri: "https:" + uri,
